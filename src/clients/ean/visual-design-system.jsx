@@ -273,10 +273,10 @@ export default function EANVisualSystem() {
           <div style={{ fontFamily: ros, fontSize: 14, fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", color: T.cabernet, marginBottom: 20 }}>Luxury Principles</div>
           {[
             { t: "Space is the first luxury", d: "EAN interfaces are never dense. Generous padding and wide margins say we value the user's attention over screen efficiency." },
-            { t: "Tempo, not speed", d: "Interactions run at 350ms, not 200ms. The interface feels unhurried, like a door that closes with weight." },
-            { t: "Warmth over precision", d: "Cream canvas, warm borders, serif body text. A well-appointed room, not an operating theatre." },
-            { t: "Restraint is confidence", d: "Colour enters sparingly. Cabernet at 10–15%. Hierarchy comes from proportion and weight, never visual noise." },
-            { t: "Materiality", d: "Every surface has weight. Cards sit on a cream desk. The interface should feel crafted, not assembled." },
+            { t: "Tempo, not speed", d: "Animations and interactions take 350ms, not 200ms. Everything moves just slowly enough that it feels intentional. When a heavy door closes, it moves gently." },
+            { t: "Warmth over precision", d: "Cream backgrounds, soft borders, rounded edges, ample spacing. The interface should feel inviting, not clinical." },
+            { t: "Restraint is confidence", d: "Colour enters sparingly. Cabernet at 10 to 15 percent. Hierarchy comes from size and weight, not from adding more colour. The goal is to avoid visual noise." },
+            { t: "Materiality", d: "Every surface has weight. Cards sit on a cream desk. The whole interface should feel crafted, not assembled." },
           ].map(p => (
             <div key={p.t} style={{ marginBottom: 22 }}>
               <div style={{ fontFamily: ros, fontSize: 16, fontWeight: 600, color: T.afterburn, marginBottom: 5 }}>{p.t}</div>
@@ -297,7 +297,7 @@ export default function EANVisualSystem() {
           </p>
           <div style={{ fontFamily: fus, fontSize: 17, fontStyle: "italic", color: T.aurum }}>Above, Beyond, For You.</div>
 
-          <div style={{ marginTop: 48, fontFamily: fus, fontSize: 14, color: T.textMuted }}>Maintained by Apex Motive</div>
+          <div style={{ marginTop: 48, fontFamily: fus, fontSize: 14, color: T.textMuted }}>Designed by Apex Motive</div>
         </aside>
 
         {/* ═══ MAIN ═══ */}

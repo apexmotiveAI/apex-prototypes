@@ -122,7 +122,7 @@ const STM = [
 /* ── Phone shell ── */
 function Phone({ children, label, tagline, notes }) {
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", flex: "1 1 0" }}>
       <div style={{ textAlign: "center", marginBottom: 22, maxWidth: 400 }}>
         <div style={{ fontFamily: ros, fontSize: 12, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: T.aurum, marginBottom: 7 }}>{tagline}</div>
         <h2 style={{ fontFamily: ros, fontSize: 26, fontWeight: 700, color: T.afterburn, margin: "0 0 10px", letterSpacing: "-0.02em" }}>{label}</h2>
@@ -130,7 +130,7 @@ function Phone({ children, label, tagline, notes }) {
       </div>
       <div style={{
         width: 390, height: 812, borderRadius: 52, background: "#100407",
-        padding: 11, boxShadow: "0 30px 70px rgba(42,7,15,.30), 0 6px 18px rgba(42,7,15,.20)", flexShrink: 0,
+        padding: 11, boxShadow: "0 30px 70px rgba(42,7,15,.30), 0 6px 18px rgba(42,7,15,.20)", flexShrink: 0, marginTop: "auto",
       }}>
         <div style={{ width: "100%", height: "100%", borderRadius: 42, overflow: "hidden", position: "relative", background: T.canvas }}>
           {children}
@@ -1065,7 +1065,7 @@ export default function EANMobileConcepts() {
           <Phone
             label="The Ledger"
             tagline="Concept A"
-            notes="A faithful translation of the desktop. The dark balance card stays a distinct object floating on cream, metrics scroll horizontally, and a full tab bar anchors the base."
+            notes="We kept the desktop layout. The dark balance card sits on cream as its own piece, the metrics slide sideways, and a standard navigation bar runs along the bottom."
           >
             <ConceptA />
           </Phone>
@@ -1073,7 +1073,7 @@ export default function EANMobileConcepts() {
           <Phone
             label="The Atrium"
             tagline="Concept B"
-            notes="The dark surface becomes the room itself. Balance lives in a Cabernet canopy, and a cream sheet rises over it holding segmented content. A floating pill nav replaces the tab bar."
+            notes="We let the dark surface run the whole top of the screen. The balance sits inside a Cabernet header, and a cream panel pulls up over it with the rest of the content. A floating navigation bar runs along the bottom."
           >
             <ConceptB />
           </Phone>
